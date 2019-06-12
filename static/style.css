@@ -1,0 +1,14 @@
+body { 
+    font-family: "BPG Rioni"; 
+}
+
+.change-old-words {
+    overflow: visible !important;
+}
+.change-old-words{
+    border-left: none;
+}
+#letter li{
+    list-style: none;
+    cursor: pointer;
+}

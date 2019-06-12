@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>old to new</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="//cdn.web-fonts.ge/fonts/bpg-rioni/css/bpg-rioni.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'style.css')}}">
+  </head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+              <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li>
+                  <a href="#">Sass</a>
+                </li>
+                <li>
+                  <a href="#">Components</a>
+                </li>
+                <li>
+                  <a href="#">JavaScript</a>
+                </li>
+              </ul>
+            </div>
+          </nav>    
+    </header>
+    <main>
+        <section id="old-words" class="row container justify-content-between">
+            <div class="collection old-words-list col s5">
+                <div class="input-field col s12">
+                  <select class="pagination-list" ></select>
+                  <label>გვერდი</label>
+                </div>
+                <div class="progress">
+                  <div class="indeterminate"></div>
+                </div>
+                <div id="letter"></div>
+              </div>  
+              <div class="collection change-old-words col s7">
+                <div class="row">
+                    <div class="col s12">
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <i class="material-icons prefix">library_books</i>
+                          <input type="text" id="connector" class="autocomplete">
+                          <label for="autocomplete-input">შესატყვისი</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>    
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="{{ url_for('static', filename = 'script.js')}}"></script>
+</body>
+</html>

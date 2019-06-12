@@ -8,6 +8,7 @@ mydb = mysql.connector.connect(
   passwd="",
   database="old_to_new"
 )
+
 mycursor = mydb.cursor()
 
 document = docx.Document("./new.docx")
